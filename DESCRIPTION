@@ -1,0 +1,12 @@
+Type: Package
+Package: KinaseTauScore
+Title: Tau Scores For Human Kinases
+Version: 0.99.1
+Authors@R: 
+    person(c("Ali", "Sajid"), "Imami", , "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3684-3539"))
+Description: This data package provides the tau scores for each kinase based on its activity in Alzheimer's disease samples.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
