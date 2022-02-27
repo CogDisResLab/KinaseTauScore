@@ -18,10 +18,15 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 
 [![GitHub issues](https://img.shields.io/github/issues/CogDisResLab/KinaseTauScore)](https://github.com/CogDisResLab/KinaseTauScore/issues) [![GitHub pulls](https://img.shields.io/github/issues-pr/CogDisResLab/KinaseTauScore)](https://github.com/CogDisResLab/KinaseTauScore/pulls)
-
-[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/KinaseTauScore.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/KinaseTauScore) [![Codecov test coverage](https://codecov.io/gh/CogDisResLab/KinaseTauScore/branch/main/graph/badge.svg)](https://app.codecov.io/gh/CogDisResLab/KinaseTauScore?branch=main)
-
 [![R-CMD-check](https://github.com/CogDisResLab/KinaseTauScore/workflows/R-CMD-check/badge.svg)](https://github.com/CogDisResLab/KinaseTauScore/actions)
+[![BiocCheck](https://github.com/CogDisResLab/KinaseTauScore/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/CogDisResLab/KinaseTauScore/actions)
+
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/CogDisResLab/KinaseTauScore)
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/CogDisResLab/KinaseTauScore?include_prereleases)
+![GitHub](https://img.shields.io/github/license/CogDisResLab/KinaseTauScore)
+
+[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/KinaseTauScore.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/KinaseTauScore)
+[![Codecov test coverage](https://codecov.io/gh/CogDisResLab/KinaseTauScore/branch/main/graph/badge.svg)](https://app.codecov.io/gh/CogDisResLab/KinaseTauScore?branch=main)
 
 <!-- badges: end -->
 
