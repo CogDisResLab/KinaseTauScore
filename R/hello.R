@@ -6,5 +6,5 @@
 #' @examples
 #' hello()
 hello <- function() {
-  2 + 2 / 2
+    2 + 2 / 2
 }
