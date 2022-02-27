@@ -6,10 +6,10 @@ output: github_document
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+    collapse = TRUE,
+    comment = "#>",
+    fig.path = "man/figures/README-",
+    out.width = "100%"
 )
 ```
 
@@ -17,24 +17,59 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
-[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/KinaseTauScore.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/KinaseTauScore)
+[![GitHub issues](https://img.shields.io/github/issues/CogDisResLab/KinaseTauScore)](https://github.com/CogDisResLab/KinaseTauScore/issues) [![GitHub pulls](https://img.shields.io/github/issues-pr/CogDisResLab/KinaseTauScore)](https://github.com/CogDisResLab/KinaseTauScore/pulls)
+
+[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/KinaseTauScore.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/KinaseTauScore) [![Codecov test coverage](https://codecov.io/gh/CogDisResLab/KinaseTauScore/branch/main/graph/badge.svg)](https://app.codecov.io/gh/CogDisResLab/KinaseTauScore?branch=main)
+
+[![R-CMD-check](https://github.com/CogDisResLab/KinaseTauScore/workflows/R-CMD-check/badge.svg)](https://github.com/CogDisResLab/KinaseTauScore/actions)
 
 <!-- badges: end -->
 
 `KinaseTauScore` is a data package that allows access to a curated dataset of phsophorylation profiles of human kinases on the 𝛕-protein in an Alzhemier Disease context. The data is derived from the paper `High-content siRNA screening of the kinome identifies kinases involved in Alzheimer's disease-related tau hyperphosphorylation` by Azorsa et al[^1].
 
-[^1]: Azorsa DO, Robeson RH, Frost D, et al. High-content siRNA screening of the kinome identifies kinases involved in Alzheimer’s disease-related tau hyperphosphorylation. *BMC Genomics*. 2010;11(1):25. [doi:[10.1186/1471-2164-11-25](doi:%5B10.1186/1471-2164-11-25)](https://doi.org/10.1186/1471-2164-11-25)
+[^1]:
+    1.  Azorsa DO, Robeson RH, Frost D, et al. High-content siRNA screening of the kinome identifies kinases involved in Alzheimer’s disease-related tau hyperphosphorylation. BMC Genomics. 2010;11(1):25. <doi:10.1186/1471-2164-11-25>
 
-## Installation
+## Installation instructions
 
-You can install the development version of KinaseTauScore like so:
+Get the latest stable `R` release from [CRAN](http://cran.r-project.org/). Then install `KinaseTauScore` from [Bioconductor](http://bioconductor.org/) using the following code:
 
-``` r
-devtools::install_github("CogDisResLab/KinaseTauScore)
+```{r 'install', eval = FALSE}
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager")
+}
+
+BiocManager::install("KinaseTauScore")
 ```
 
-The Release versions are planned to be released on the [Bioconductor](https://www.bioconductor.org) repository. When available, the package will be installable by running the following command:
+And the development version from [GitHub](https://github.com/CogDisResLab/KinaseTauScore) with:
 
-``` r
-BiocManager::install("KinaseRauScore")
+```{r 'install_dev', eval = FALSE}
+BiocManager::install("CogDisResLab/KinaseTauScore")
 ```
+
+## Citation
+
+Below is the citation output from using `citation('KinaseTauScore')` in R. Please run this yourself to check for any updates on how to cite **KinaseTauScore**.
+
+```{r 'citation', eval = requireNamespace('KinaseTauScore')}
+print(citation('KinaseTauScore'), bibtex = TRUE)
+```
+
+Please note that the `KinaseTauScore` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
+
+## Code of Conduct
+
+Please note that the `KinaseTauScore` project is released with a [Contributor Code of Conduct](https://bioconductor.github.io/bioc_coc_multilingual/). By contributing to this project, you agree to abide by its terms.
+
+## Development tools
+
+-   Continuous code testing is possible thanks to [GitHub actions](https://www.tidyverse.org/blog/2020/04/usethis-1-6-0/) through `r BiocStyle::CRANpkg('usethis')`, `r BiocStyle::CRANpkg('remotes')`, and `r BiocStyle::CRANpkg('rcmdcheck')` customized to use [Bioconductor's docker containers](https://www.bioconductor.org/help/docker/) and `r BiocStyle::Biocpkg('BiocCheck')`.
+-   Code coverage assessment is possible thanks to [codecov](https://codecov.io/gh) and `r BiocStyle::CRANpkg('covr')`.
+-   The [documentation website](http://CogDisResLab.github.io/KinaseTauScore) is automatically updated thanks to `r BiocStyle::CRANpkg('pkgdown')`.
+-   The code is styled automatically thanks to `r BiocStyle::CRANpkg('styler')`.
+-   The documentation is formatted thanks to `r BiocStyle::CRANpkg('devtools')` and `r BiocStyle::CRANpkg('roxygen2')`.
+
+For more details, check the `dev` directory.
+
+This package was developed using `r BiocStyle::Biocpkg('biocthis')`.

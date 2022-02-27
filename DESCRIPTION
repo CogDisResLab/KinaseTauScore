@@ -1,12 +1,15 @@
-Type: Package
 Package: KinaseTauScore
 Title: Tau Scores For Human Kinases
 Version: 0.99.2
+Date: 2022-02-27
 Authors@R: 
     person(c("Ali", "Sajid"), "Imami", , "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3684-3539"))
 Description: This data package provides the tau scores for each kinase based on its activity in Alzheimer's disease samples.
 License: GPL (>= 3)
+URL: https://github.com/CogDisResLab/KinaseTauScore
+BugReports: https://support.bioconductor.org/t/KinaseTauScore
+biocViews: Software
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
