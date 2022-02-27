@@ -1,6 +1,6 @@
 Package: KinaseTauScore
 Title: Tau Scores For Human Kinases
-Version: 0.99.2
+Version: 0.99.3
 Date: 2022-02-27
 Authors@R: 
     person(c("Ali", "Sajid"), "Imami", , "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
