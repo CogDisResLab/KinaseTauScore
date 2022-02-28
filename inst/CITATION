@@ -1,7 +1,8 @@
 pkgVer <- function(pkg) {
     if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
     ver <- meta$Version
-    paste0('https://github.com/CogDisResLab/KinaseTauScore/', pkg, ' - R package version ', ver)
+    paste0('https://github.com/CogDisResLab/KinaseTauScore/',
+    pkg, ' - R package version ', ver)
 }
 
 c(
@@ -9,7 +10,8 @@ c(
     bibentry(bibtype="manual",
         title = "KinaseTauScore",
         author = personList(
-                person(c("Ali", "Sajid"), "Imami", , "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
+                person(c("Ali", "Sajid"), "Imami", ,
+                "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3684-3539"))
         ),
         year = format(Sys.Date(), "%Y"),
@@ -20,7 +22,8 @@ c(
     bibentry(bibtype="article",
         title = "KinaseTauScore",
         author = personList(
-                person(c("Ali", "Sajid"), "Imami", , "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
+                person(c("Ali", "Sajid"), "Imami", ,
+                "Ali.Sajid.Imami@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3684-3539"))
         ),
         year = format(Sys.Date(), "%Y"),
