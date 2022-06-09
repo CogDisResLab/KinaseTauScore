@@ -19,7 +19,7 @@ A data frame with 3243 rows and 6 variables:
 \url{https://static-content.springer.com/esm/art\%3A10.1186\%2F1471-2164-11-25/MediaObjects/12864_2008_2619_MOESM1_ESM.XLS}
 }
 \usage{
-AzorsaActivity
+data(AzorsaActivity)
 }
 \description{
 Kinase Activity on Phosphorylating Tau Protein

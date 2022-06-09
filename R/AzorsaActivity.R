@@ -13,5 +13,6 @@
 #'   \item{total_tau}{weight of the diamond, in carats}
 #' }
 #' @source \url{https://static-content.springer.com/esm/art%3A10.1186%2F1471-2164-11-25/MediaObjects/12864_2008_2619_MOESM1_ESM.XLS}
+#' @usage data(AzorsaActivity)
 
 "AzorsaActivity"
